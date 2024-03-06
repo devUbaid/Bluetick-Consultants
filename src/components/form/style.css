@@ -1,0 +1,103 @@
+
+
+  .connect-container {
+    max-width: 1125px;
+    padding: 20px;
+    margin: auto;
+  }
+  
+  /* Divider */
+  .divider {
+    border-bottom: 3px solid #4a90e2;
+    width: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: start;
+  }
+  
+  /* Section Description */
+  .section-description {
+    font-size: 22px;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form Group */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Label */
+  .label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  /* Input Field */
+  .input-field, .textarea-field {
+    font-size: 20px;
+    border: 1px solid #e2e8f0;
+    padding: 10px;
+    border-radius: 0.25rem;
+    width: 100%;
+  }
+  .textarea-field{
+    height: 30vh;
+  }
+  .input-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    width: 20%;
+    font-size: 18px;
+  }
+  
+  /* Submit Button Hover */
+  .submit-button:hover {
+    background-color: #3578d8;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 640px) {
+    /* Adjust max-width for smaller screens */
+    .container {
+      max-width: 24rem;
+    }
+    .input-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .section-description{
+      font-size: 18px;
+    }
+    .label{
+      font-size: 15px;
+    }
+    .textarea-field{
+      height: 12vh;
+    }
+    .section-title{
+      font-size: 30px;
+    }
+    .submit-button {
+      font-size: 15px;
+      width: 40%;
+    }
+  }

@@ -1,0 +1,213 @@
+
+  /* Footer */
+  li{
+      list-style: none;
+    }
+    a{
+      text-decoration: none;
+    }
+    footer{
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      padding: 48px 50px;
+      border-radius: 20px 20px 0 0;
+      transition: background 0.3s linear;
+    }
+    
+    .container{
+      max-width: 1125px;
+      padding: 30px  30px;
+      margin: auto;
+      background-color: var(--primary-color1);
+      border-radius: 35px;
+    }
+    
+    .content-footer{
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .profile{
+      width: 30%;
+      margin-left: 15px;
+    }
+    
+    .profile .logo__area{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+    }
+    .profile .logo__area img{
+      width: 140px;
+      margin-bottom: 1rem;
+    }
+    .logo__area .logo__name{
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--primary-white);
+    }
+    .desc__area{
+      display: flex;
+      margin: 20px 0;
+      gap: 8px;
+    }
+    .desc__area img{
+      width: 80%;
+      height: auto;
+    }
+    
+    .social_media a{
+      color: var(--primary-white);
+      margin-right: 22px;
+      font-size: 24px;
+    }
+    .social_media :hover{
+      color: var(--secondary-white);
+    
+    }
+    
+    .service__area{
+      display: flex;
+    }
+    .service__header{
+      margin-right: 50px;
+    }
+    li.service__name{
+      color: var(--primary-white) ;
+      font-weight: 600;
+      font-size: 21px;
+    }
+    .service__header li{
+      padding-bottom: 16px;
+    }
+    .service__header li a{
+      color: var(--primary-white);
+      padding-bottom: 1px;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    .service__header li a:hover{
+      color: #313131;
+    }
+    hr{
+      height: 1px;
+      border: none;
+      background-color: #7ba8e0;
+      margin-bottom: 1rem;
+    }
+    .footer__bottom{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .tou{
+      display: flex;
+      align-items: center;
+    }
+    .terms{
+      display: flex;
+      gap: 13px;
+    }
+    .terms a,.copy_right p,.contact-email{
+      color: var(--primary-white);
+      font-size: 14px;
+    }
+    
+    .tou a:hover{
+      color: #313131;
+    }
+  
+    
+    /* Responsive */
+    
+    @media screen and (max-width: 990px){
+      .content-footer{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+      }
+      .desc__area{
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .profile{
+        width: 70%;
+        margin: 0;
+      }
+      .desc__area img{
+        height: 90px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .content-footer{
+        flex-direction: column;
+        padding: 0;
+      }
+      .desc__area{
+        width: 85%;
+        flex-direction: row;
+      }
+      .desc__area img{
+        height: 70px;
+      }
+      .profile{
+        width: 100%;
+        margin: 0;
+      }
+      footer{
+        padding: 50px 15px;
+      }
+      .tou{
+        flex-wrap: wrap;
+        align-items: flex-start;
+      }
+      .service__area{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0 27px;
+      }
+      .service__header{
+        width: 120px;
+        margin-bottom: 18px;
+      }
+      .social_media{
+        margin-bottom: 0.5rem;
+      }
+      .footer__bottom{
+        justify-content: space-between;
+      }
+    }
+    
+    @media screen and (max-width: 512px) {
+      .content-footer{
+        flex-wrap: wrap;
+      }
+      .service__area{
+        margin-bottom: 8px;
+        justify-content: space-between;
+      }
+      .service__header{
+        margin: 10px 0;
+      }
+      .desc__area{
+        width: 90%;
+        margin-bottom: 0;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .tou{
+        flex-direction: row;
+      }
+      .copy_right{
+        margin: 8px 0;
+        width: 60%;
+      }
+      .copy_right p{
+        font-size: 13px;
+      }
+      .service__header li{
+        padding-bottom: 10px;
+        font-size: 18px;
+      }
+    }
